@@ -36,3 +36,20 @@ lb.addEventListener('touchend', e => {
   const dx = e.changedTouches[0].clientX - tx; tx = null;
   if (Math.abs(dx) > 50 && gal.length > 1) show(idx + (dx < 0 ? 1 : -1));
 });
+
+// Formulario: arma el mensaje y abre WhatsApp de Martín
+const WA_NUM = '5493855861068';
+const WA_INTRO = 'Hola Martín, vi tu portfolio y quiero consultarte:';
+document.querySelectorAll('form[data-wa-form]').forEach(form => form.addEventListener('submit', e => {
+  e.preventDefault();
+  const d = new FormData(form);
+  const lines = [WA_INTRO, ''];
+  const add = (label, v) => { if (v && String(v).trim()) lines.push(`*${label}:* ${String(v).trim()}`); };
+  add('Nombre', d.get('nombre'));
+  add('WhatsApp', d.get('whatsapp'));
+  add('Negocio', d.get('negocio'));
+  add('Necesito', d.getAll('servicio').join(', '));
+  add('Cantidad', d.get('cantidad'));
+  add('Mensaje', d.get('mensaje'));
+  window.open(`https://wa.me/${WA_NUM}?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener');
+}));
