@@ -171,3 +171,16 @@ h2{font-size:clamp(28px,3.6vw,44px)}
 .res b{font-size:clamp(30px,3.6vw,48px);white-space:nowrap}
 .case-embed{display:flex;justify-content:center}
 .case-embed .instagram-media{margin:0!important;min-width:0!important;width:100%!important;max-width:420px!important}
+
+/* Sobre mí */
+.about-in{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.about-photo{margin:0;max-width:380px;position:relative}
+.about-photo::before{content:"";position:absolute;inset:14px -14px -14px 14px;border-radius:18px;background:var(--orange);z-index:0}
+.about-photo img{position:relative;z-index:1;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:18px}
+.about-copy{display:flex;flex-direction:column;gap:18px}
+.about-copy h2{font-size:clamp(34px,4.6vw,54px)}
+.about-copy h2 em{font-style:normal;color:var(--orange)}
+.about-copy > p:not(.kicker){color:var(--muted);font-size:17px;max-width:56ch}
+.about-copy a{color:var(--fg);font-weight:700;text-decoration-color:var(--orange);text-underline-offset:3px}
+.about-tools b{color:var(--fg)}
+@media (max-width:860px){.about-in{grid-template-columns:1fr;gap:40px}.about-photo{max-width:320px}}
