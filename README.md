@@ -7,4 +7,4 @@ Marketing digital y diseño. Sitio estático (HTML + CSS + JS, sin build), publi
 
 Pendiente: foto de Martín, Instagram personal, más piezas de Pollería Bachi y El Oso.
 
-Parte de [MGM Studio](https://mgm-studio.netlify.app).
+Parte de [Nexo Studio](https://nexostudio-sde.vercel.app).

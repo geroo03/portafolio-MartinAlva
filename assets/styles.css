@@ -129,11 +129,11 @@ p{margin:0}
 .contact-copy{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
 .contact-copy > p:not(.kicker):not(.wa-num){color:var(--muted);font-size:17px}
 .wa-num{font-weight:700;user-select:all;color:var(--muted)}
-.mgm{display:flex;align-items:center;gap:14px;margin-top:10px;padding:16px;border-radius:var(--r);text-decoration:none;background:#000;color:#b5b5ba;transition:transform .2s}
-.mgm:hover{transform:translateY(-2px)}
-.mgm img{height:44px;width:auto}
-.mgm span{font-size:14px}
-.mgm b{color:#fff}
+.nexo{display:flex;align-items:center;gap:14px;margin-top:10px;padding:16px;border-radius:var(--r);text-decoration:none;background:#000;color:#b5b5ba;transition:transform .2s}
+.nexo:hover{transform:translateY(-2px)}
+.nexo img{height:44px;width:auto}
+.nexo span{font-size:14px}
+.nexo b{color:#fff}
 .form{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:16px}
 .form label{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:14px}
 .form input[type=text],.form input[type=tel],.form textarea{font:500 16px var(--body);padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--fg);width:100%}
